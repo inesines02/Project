@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fraude Detection</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Fraude Detection</h1>
+  
+
+    
+    <form action="/prediction" id="prediction-form" method="post">
+        <label for="step">Step:</label>
+        <input type="text" name="step" id="step">
+
+        <label for="amount">Amount:</label>
+        <input type="text" name="amount" id="amount">
+
+        <label for="oldbalanceOrg">Old Balance Orig:</label>
+        <input type="text" name="oldbalanceOrg" id="oldbalanceOrg"><br>
+
+        <label for="newbalanceOrig">new balance Orig:</label>
+        <input type="text" name="newbalanceOrig" id="newbalanceOrig"><br>
+
+        <label for="oldbalanceDes">old balance Des:</label>
+        <input type="text" name="oldbalanceDes" id="oldbalanceDes"><br>
+
+        <label for="newbalanceDest">new balance Dest:</label>
+        <input type="text" name="newbalanceDest" id="newbalanceDest"><br>
+
+        <label for="dif_orig">dif orig:</label>
+        <input type="text" name="dif_orig" id="dif_orig"><br>
+
+        <label for="dif_des">dif des:</label>
+        <input type="text" name="dif_des" id="dif_des"><br>
+
+        <input class="btn" type="submit" value="Prédire">
+        <div id="prediction-result">
+            <!-- Predicted result will be displayed here -->
+        </div>
+    </form>
+    <script src="js.js"></script>
+</body>
+</html>
